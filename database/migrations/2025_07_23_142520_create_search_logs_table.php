@@ -14,8 +14,7 @@ return new class extends Migration
         Schema::create('search_logs', function (Blueprint $table) {
             $table->id();
              $table->string('term');
-            $table->string('query');
-            $table->foreignId('user_id')->nullable();
+             $table->foreignId('user_id')->nullable();
             $table->timestamps();
         });
     }
